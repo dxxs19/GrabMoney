@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.wei.grabmoney.R;
-import com.wei.grabmoney.constant.GlobalVariable;
 
 import cn.waps.AppConnect;
 import cn.waps.UpdatePointsListener;
