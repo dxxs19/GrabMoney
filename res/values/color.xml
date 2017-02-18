@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wine_red">#dd434d</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#00000000</color>
+    <color name="dark_gray">#ff333333</color>
+    <color name="bg_seprate">#ffe8e8e8</color>
+    <color name="sad_light_gray">#ffeeedf3</color>
+    <color name="gray_bg_light">#ffeeedf3</color>
+    <color name="gray_text">#ff3a3536</color>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="editablePrefsItem" parent="@style/commonPrefsItem">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/editable_bg_selector</item>
+    </style>
+
+    <style name="commonPrefsItem">
+        <item name="android:paddingLeft">@dimen/SmallPadding</item>
+        <item name="android:paddingTop">@dimen/SmallPadding</item>
+        <item name="android:paddingBottom">@dimen/SmallPadding</item>
+        <item name="android:paddingRight">@dimen/SmallPadding</item>
+    </style>
+
+    <style name="NormalText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/NormalTextSize</item>
+    </style>
+</resources>
