@@ -37,5 +37,11 @@
     <string name="notice_banner_ad_id">ca-app-pub-8631522755949363/3830521939</string>
     <string name="about_banner_ad_id">ca-app-pub-8631522755949363/6783988333</string>
     <string name="instructions_banner_ad_id">ca-app-pub-8631522755949363/2353788733</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
 </resources>

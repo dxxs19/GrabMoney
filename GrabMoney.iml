@@ -89,6 +89,13 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
@@ -113,14 +120,21 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="support-annotations-25.1.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-tasks-10.0.1" level="project" />
+    <orderEntry type="library" exported="" name="play-services-gass-10.0.1" level="project" />
+    <orderEntry type="library" exported="" name="play-services-ads-10.0.1" level="project" />
+    <orderEntry type="library" exported="" name="play-services-base-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-25.1.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-basement-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-25.1.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-clearcut-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="YoumiSdk_v6.4.4_2016-09-08" level="project" />
     <orderEntry type="library" exported="" name="support-core-ui-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="AppOffer_2.4.7" level="project" />
+    <orderEntry type="library" exported="" name="play-services-ads-lite-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-25.1.0" level="project" />
   </component>
 </module>

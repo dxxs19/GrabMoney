@@ -30,6 +30,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.wei.grabmoney.R;
 import com.wei.grabmoney.constant.GlobalVariable;
 import com.wei.grabmoney.utils.Log;
@@ -69,7 +71,7 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initYoumi();
+//        initYoumi();
         // 初始化控件
         initView();
         // 初始化设置数据
@@ -146,9 +148,14 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
 
     private void initAdvs()
     {
-        AppConnect.getInstance(GlobalVariable.APP_ID, APP_PID,this);
-        AppConnect.getInstance(this).initPopAd(this);
-        initYoumi();
+//        AppConnect.getInstance(GlobalVariable.APP_ID, APP_PID,this);
+//        AppConnect.getInstance(this).initPopAd(this);
+//        initYoumi();
+
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        adView.loadAd(adRequest);
     }
 
     private void initYoumi()
@@ -182,9 +189,9 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
         fastestChk.setChecked(isPayPoint);
 
         //设置插屏
-        showWpasSpot();
-        //设置广告条
-        setupBannerAd(SHOW_WPAS);
+//        showWpasSpot();
+//        //设置广告条
+//        setupBannerAd(SHOW_WPAS);
 
 //        AppConnect.getInstance(this).awardPoints(PAY_POINTS);
 //        AppConnect.getInstance(this).spendPoints(120);
@@ -401,13 +408,13 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
 
         // （可选）注销积分监听
         // 如果在onCreate调用了PointsManager.getInstance(this).registerNotify(this)进行积分余额监听器注册，那这里必须得注销
-        PointsManager.getInstance(this).unRegisterNotify(this);
-
-        // （可选）注销积分订单赚取监听
-        // 如果在onCreate调用了PointsManager.getInstance(this).registerPointsEarnNotify(this)进行积分订单赚取监听器注册，那这里必须得注销
-        PointsManager.getInstance(this).unRegisterPointsEarnNotify(this);
-
-        // 回收积分广告占用的资源
-        OffersManager.getInstance(this).onAppExit();
+//        PointsManager.getInstance(this).unRegisterNotify(this);
+//
+//        // （可选）注销积分订单赚取监听
+//        // 如果在onCreate调用了PointsManager.getInstance(this).registerPointsEarnNotify(this)进行积分订单赚取监听器注册，那这里必须得注销
+//        PointsManager.getInstance(this).unRegisterPointsEarnNotify(this);
+//
+//        // 回收积分广告占用的资源
+//        OffersManager.getInstance(this).onAppExit();
     }
 }

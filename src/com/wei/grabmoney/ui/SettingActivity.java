@@ -7,6 +7,8 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.wei.grabmoney.R;
 import com.wei.grabmoney.constant.GlobalVariable;
 
@@ -28,8 +30,16 @@ public class SettingActivity extends BaseActivity implements UpdatePointsListene
         super.onCreate(savedInstanceState);
         initView();
         //设置广告条
-        setupBannerAd(SHOW_WPAS);
+//        setupBannerAd(SHOW_WPAS);
 //        setupBannerAd(SHOW_YOUMI);
+        initAdvs();
+    }
+
+    private void initAdvs() {
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        adView.loadAd(adRequest);
     }
 
     private void initView()

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.wei.grabmoney.R;
 
 /**
@@ -18,6 +20,14 @@ public class BeCareActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_be_care);
         setCustomTitle("注意事项");
+        initAdvs();
+    }
+
+    private void initAdvs() {
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        adView.loadAd(adRequest);
     }
 
     /**
