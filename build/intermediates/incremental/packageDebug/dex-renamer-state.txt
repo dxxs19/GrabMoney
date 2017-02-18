@@ -1,0 +1,7 @@
+#Sat Jan 28 11:12:33 CST 2017
+base.0=D\:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f6a131e2686493b2aee6bbea9e4407a462119215
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0aad13e93bbf718361b19f2bda1a271bfc1a704d\\classes.dex
+base.1=D\:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0aad13e93bbf718361b19f2bda1a271bfc1a704d
+file.0=D\:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f6a131e2686493b2aee6bbea9e4407a462119215\\classes.dex

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_seprate">#ffe8e8e8</color>
+    <color name="black">#00000000</color>
+    <color name="dark_gray">#ff333333</color>
+    <color name="gray_bg_light">#ffeeedf3</color>
+    <color name="gray_text">#ff3a3536</color>
+    <color name="sad_light_gray">#ffeeedf3</color>
+    <color name="white">#ffffffff</color>
+    <color name="wine_red">#dd434d</color>
+    <dimen name="BigTextSize">18.0dip</dimen>
+    <dimen name="BiggerTextSize">21.0dip</dimen>
+    <dimen name="LargePadding">30.0dip</dimen>
+    <dimen name="NormalPadding">12.0dip</dimen>
+    <dimen name="NormalTextSize">16.0dip</dimen>
+    <dimen name="SmallPadding">8.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="corner">10dp</dimen>
+    <dimen name="title_height">50dp</dimen>
+    <string name="about_banner_ad_id">ca-app-pub-8631522755949363/6783988333</string>
+    <string name="action_settings">Settings</string>
+    <string name="alipay_account">cxw103@163.com</string>
+    <string name="alipay_tips">点击下面的支付宝账号->转账->转到支付宝账户->在对方账户输入框粘贴->下一步->输入密码即可</string>
+    <string name="app_ad_id">ca-app-pub-8631522755949363~2493389530</string>
+    <string name="app_name">自动抢红包</string>
+    <string name="care_tips_five">
+        五、如果手机性能及网络都OK的话，自动抢的速度是很快的。为避免因为速度太快被踢，你可以适当调节延迟抢红包时间。例，延迟0.3秒。
+    </string>
+    <string name="care_tips_four">四、如果屏幕处于锁屏状态，当有红包过来时，会以系统自带的铃声提醒，同时伴随持续3秒钟的震动。</string>
+    <string name="care_tips_one">一、抢红包时，需保证屏幕处于非锁屏状态,可以到设置界面把自动锁屏时间设为“永不”：</string>
+    <string name="care_tips_seven">
+        七、如果取消极速抢，仍然可以启用通用抢功能。看个人喜欢！
+    </string>
+    <string name="care_tips_six">
+        六、应用默认开启的是通用抢红包功能，即兼容多个微信版本；极速抢功能则是针对特定微信版本而设计，所以速度比通用版要快很多。
+    </string>
+    <string name="care_tips_three">三、抢红包时，最好不要停留在当前聊天界面，这样有极低的可能性会漏包。建议保持在桌面或者在其它app界面，保证万无一失。</string>
+    <string name="care_tips_two">二、千万不能屏蔽通知栏信息，不然如果不在聊天界面，则无法跳转过去抢红包。</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home_banner_ad_id">ca-app-pub-8631522755949363/5446855937</string>
+    <string name="instructions_banner_ad_id">ca-app-pub-8631522755949363/2353788733</string>
+    <string name="instructions_tips_one">一、请先开启服务，然后把app设为自启动应用，避免服务被一键清理杀死！</string>
+    <string name="instructions_tips_two">二、关键字过滤请用中文逗号隔开</string>
+    <string name="last_tips">
+        \t\t\t\t注：如果您觉得本应用好用的话，不要忘了常去打赏作者哈！
+    </string>
+    <string name="notice_banner_ad_id">ca-app-pub-8631522755949363/3830521939</string>
+    <string name="setting_banner_ad_id">ca-app-pub-8631522755949363/8400322335</string>
+    <string name="tips">
+        \t\t\t\t由于作者个人能力及时间限制，本应用难免会有漏洞或体验不好的地方，如果你在使用过程中有什么意见或者建议，可以给我发邮件。
+    </string>
+    <string name="wxpay_tips">整个界面截图->打开微信扫一扫->从相册选取二维码->转账->输入密码即可</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="NormalText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/NormalTextSize</item>
+    </style>
+    <style name="commonPrefsItem">
+        <item name="android:paddingLeft">@dimen/SmallPadding</item>
+        <item name="android:paddingTop">@dimen/SmallPadding</item>
+        <item name="android:paddingBottom">@dimen/SmallPadding</item>
+        <item name="android:paddingRight">@dimen/SmallPadding</item>
+    </style>
+    <style name="editablePrefsItem" parent="@style/commonPrefsItem">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/editable_bg_selector</item>
+    </style>
+</resources>

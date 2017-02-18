@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="89759e4b1344d16899ee68018c2fbb585e0fd3a3">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f6a131e2686493b2aee6bbea9e4407a462119215\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\libs\AppOffer_2.4.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0b7a68e2f800cd03d6bce47af8d6ca9c7779b3b">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\AppOffer_2.4.7_32f63eb3dd5b2dbbc7b300f491b8352ea9743f8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_0d1507009557ed80a303e9ec16265c398df7e793\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_1dc6e8c1a5096efcdf09f9733f9a1aa4cdd37c50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_1dc6e8c1a5096efcdf09f9733f9a1aa4cdd37c50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Java\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_76b63da1abb07d6583a6b3108d66244c90b3ea7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_78af1447dcee0f095e1f0f216dc0bb2f4a5f46e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_fac11586b3b1a702497e646676784287aae2961e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_1aca08d17a49bed3910f5f9d8e23d69a9fbf63df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c199564ee7806a67446f348c1ebf240530aab49e">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f0937dcae9c83fc9daa4eadaf33155b712b447e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_ac76cdd713371f5696d377c978d0abdd7ca985af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0b4122995d12ac0458f5fd1d32767bf4ef8a3798">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_97f54451caf28aab10ffcf2231014bf67fd07994\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_0a7335c14e1c5fe57e971a504a2f683085a675a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d45a6b3ef827674fc59c2dd1dc3e3e141ad4a8f2">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f0937dcae9c83fc9daa4eadaf33155b712b447e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\AppOffer_2.4.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0b7a68e2f800cd03d6bce47af8d6ca9c7779b3b">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\AppOffer_2.4.7_07f6cfe20c2d3f93ba9cf44c38d4536cf01fbd49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\libs\YoumiSdk_v6.4.4_2016-09-08.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3364d147d52f4de272d366065c5e5cf0a3ca2b32">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\YoumiSdk_v6.4.4_2016-09-08_245cd69ec7004c8eb2d2e13130470ac5345a3fd3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_0a7335c14e1c5fe57e971a504a2f683085a675a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="50d84c5948c5ce71b63b0555d4819eae7005c1c1">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0aad13e93bbf718361b19f2bda1a271bfc1a704d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_0d1507009557ed80a303e9ec16265c398df7e793\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_aad46312d0e810f8c0bd0268a5e9d883f5183fc9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="593ed4eec9e3beeccddd2c7f44415d7d77c4db69">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_97f54451caf28aab10ffcf2231014bf67fd07994\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\AppOffer_2.4.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f0b7a68e2f800cd03d6bce47af8d6ca9c7779b3b">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\AppOffer_2.4.7_07f6cfe20c2d3f93ba9cf44c38d4536cf01fbd49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\YoumiSdk_v6.4.4_2016-09-08.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3364d147d52f4de272d366065c5e5cf0a3ca2b32">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\YoumiSdk_v6.4.4_2016-09-08_88b60cf7bc7d5f340af46ce901cbb586967e220f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_46cb50d4ed3aa039675eb3b9a2664bc636e4dcf8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_3a04f53ea7ba91e16d8753692830f5334cdc2234\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\AppOffer_2.4.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0b7a68e2f800cd03d6bce47af8d6ca9c7779b3b">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\AppOffer_2.4.7_07f6cfe20c2d3f93ba9cf44c38d4536cf01fbd49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6250e722a3108546a69dd321bfc26cc1a11e9aea">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_97f54451caf28aab10ffcf2231014bf67fd07994\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_5f9ccf0ba4e134c623925bb784be7e3c67e68a17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_46cb50d4ed3aa039675eb3b9a2664bc636e4dcf8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\YoumiSdk_v6.4.4_2016-09-08.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3364d147d52f4de272d366065c5e5cf0a3ca2b32">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\YoumiSdk_v6.4.4_2016-09-08_88b60cf7bc7d5f340af46ce901cbb586967e220f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_fac11586b3b1a702497e646676784287aae2961e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_2a9e67b69b30942b500841012c738fab7819763a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Java\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_76b63da1abb07d6583a6b3108d66244c90b3ea7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\libs\YoumiSdk_v6.4.4_2016-09-08.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3364d147d52f4de272d366065c5e5cf0a3ca2b32">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\2\YoumiSdk_v6.4.4_2016-09-08_88b60cf7bc7d5f340af46ce901cbb586967e220f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_2a9e67b69b30942b500841012c738fab7819763a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cf936a8ad2f389bd1f605427209b0d98b29752f2">
+        <dex dex="D:\WEI\Netearned\GrabMoneyV1.0.12\GrabMoney\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f0937dcae9c83fc9daa4eadaf33155b712b447e3\classes.dex" />
+    </item>
+
+</items>

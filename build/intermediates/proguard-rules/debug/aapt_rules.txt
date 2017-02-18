@@ -1,0 +1,64 @@
+# view AndroidManifest.xml #generated:48
+-keep class com.wei.grabmoney.service.GrabMoneyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.wei.grabmoney.ui.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.wei.grabmoney.ui.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.wei.grabmoney.ui.BeCareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.wei.grabmoney.ui.InstructionsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.wei.grabmoney.ui.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.wei.grabmoney.ui.RewardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.wei.grabmoney.ui.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class net.youmi.android.AdBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class net.youmi.android.AdReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class net.youmi.android.AdService { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class net.youmi.android.ExpService { <init>(...); }
+
+# onClick res/layout/activity_setting.xml #generated:205
+-keepclassmembers class * { *** myApps(...); }
+
+# onClick res/layout/activity_setting.xml #generated:279
+-keepclassmembers class * { *** openAbout(...); }
+
+# onClick res/layout/activity_setting.xml #generated:15
+-keepclassmembers class * { *** openInstructions(...); }
+
+# onClick res/layout/activity_be_care.xml #generated:34
+# onClick res/layout/activity_setting.xml #generated:52
+-keepclassmembers class * { *** openSetting(...); }
+
+# onClick res/layout/activity_main.xml #generated:238
+# onClick res/layout/activity_reward.xml #generated:67
+# onClick res/layout/activity_setting.xml #generated:168
+-keepclassmembers class * { *** reward(...); }
+
+# onClick res/layout/activity_setting.xml #generated:91
+-keepclassmembers class * { *** showMyApps(...); }
+
+# onClick res/layout/activity_setting.xml #generated:128
+# onClick res/layout/activity_setting.xml #generated:242
+-keepclassmembers class * { *** showOffers(...); }
+
+# onClick res/layout/activity_main.xml #generated:26
+-keepclassmembers class * { *** startService(...); }
+

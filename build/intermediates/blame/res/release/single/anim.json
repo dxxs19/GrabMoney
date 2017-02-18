@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\release\\anim\\anim_splash_enter.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\anim\\anim_splash_enter.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\release\\anim\\anim_dialog_enter.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\anim\\anim_dialog_enter.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\release\\anim\\anim_dialog_exit.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\anim\\anim_dialog_exit.xml"
+    }
+]

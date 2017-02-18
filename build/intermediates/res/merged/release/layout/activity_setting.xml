@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sad_light_gray"
+    tools:context="com.wei.grabmoney.ui.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="openInstructions"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="使用说明"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="openSetting"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="设置锁屏时间(建议设为永不锁屏)"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:visibility="gone"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="showMyApps"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="注意事项"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="showOffers"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_integralwall"
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="积分墙"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:visibility="gone"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="reward"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="打赏作者"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="myApps"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="我的应用"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="showOffers"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="推荐应用"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+        <LinearLayout
+            style="@style/editablePrefsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="openAbout"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="关于"
+                android:textColor="@color/grey_to_red_selector"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/SmallPadding"
+            android:background="@color/bg_seprate" />
+
+    </LinearLayout>
+
+</RelativeLayout>

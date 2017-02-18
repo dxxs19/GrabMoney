@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="15358816415513"
+    token="8269737627995775564"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="6023" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="625" />
+    <task
+        name="verifier"
+        duration="75" />
+
+    <artifact
+        location="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\outputs\apk\GrabMoney-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="15358816415513"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build\outputs\apk\GrabMoney-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
