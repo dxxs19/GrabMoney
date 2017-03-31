@@ -1,3 +1,18 @@
+# view AndroidManifest.xml #generated:120
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# view res/layout/activity_about.xml #generated:9
+# view res/layout/activity_be_care.xml #generated:14
+# view res/layout/activity_main.xml #generated:250
+# view res/layout/activity_setting.xml #generated:323
+-keep class com.google.android.gms.ads.AdView { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:48
 -keep class com.wei.grabmoney.service.GrabMoneyService { <init>(...); }
 
@@ -34,29 +49,29 @@
 # view AndroidManifest.xml #generated:101
 -keep class net.youmi.android.ExpService { <init>(...); }
 
-# onClick res/layout/activity_setting.xml #generated:205
+# onClick res/layout/activity_setting.xml #generated:206
 -keepclassmembers class * { *** myApps(...); }
 
-# onClick res/layout/activity_setting.xml #generated:279
+# onClick res/layout/activity_setting.xml #generated:284
 -keepclassmembers class * { *** openAbout(...); }
 
-# onClick res/layout/activity_setting.xml #generated:15
+# onClick res/layout/activity_setting.xml #generated:16
 -keepclassmembers class * { *** openInstructions(...); }
 
-# onClick res/layout/activity_be_care.xml #generated:34
-# onClick res/layout/activity_setting.xml #generated:52
+# onClick res/layout/activity_be_care.xml #generated:45
+# onClick res/layout/activity_setting.xml #generated:53
 -keepclassmembers class * { *** openSetting(...); }
 
 # onClick res/layout/activity_main.xml #generated:238
 # onClick res/layout/activity_reward.xml #generated:67
-# onClick res/layout/activity_setting.xml #generated:168
+# onClick res/layout/activity_setting.xml #generated:169
 -keepclassmembers class * { *** reward(...); }
 
-# onClick res/layout/activity_setting.xml #generated:91
+# onClick res/layout/activity_setting.xml #generated:92
 -keepclassmembers class * { *** showMyApps(...); }
 
-# onClick res/layout/activity_setting.xml #generated:128
-# onClick res/layout/activity_setting.xml #generated:242
+# onClick res/layout/activity_setting.xml #generated:129
+# onClick res/layout/activity_setting.xml #generated:245
 -keepclassmembers class * { *** showOffers(...); }
 
 # onClick res/layout/activity_main.xml #generated:26

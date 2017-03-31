@@ -1,15 +1,15 @@
 [
     {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\time_bg.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\time_bg.xml"
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_background.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_reward_selector.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_reward_selector.xml"
     },
     {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonbg.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\buttonbg.xml"
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background.xml",
@@ -20,20 +20,16 @@
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_close.png"
     },
     {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_setting_selector.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_setting_selector.xml"
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_start_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_start_selector.xml"
     },
     {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bar_back_bg_selector.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\title_bar_back_bg_selector.xml"
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_close.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_close.png"
     },
     {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_normal.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_normal.xml"
-    },
-    {
-        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\editable_bg_selector.xml",
-        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\editable_bg_selector.xml"
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bar_back_bg_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\title_bar_back_bg_selector.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_pressed.xml",
@@ -44,8 +40,96 @@
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_start_selector.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_reward_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_reward_selector.xml"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_setting_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_setting_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\time_bg.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\time_bg.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\time_bg.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\time_bg.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonbg.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\buttonbg.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\item_bg.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\item_bg.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_pressed.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_pressed.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\editable_bg_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\editable_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_setting_selector.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_setting_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bar_back_bg_selector.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\title_bar_back_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonbg.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\buttonbg.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_normal.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_normal.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_normal.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\btn_normal.xml"
+    },
+    {
+        "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\editable_bg_selector.xml",
+        "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable\\editable_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable\\btn_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable\\item_bg.xml",

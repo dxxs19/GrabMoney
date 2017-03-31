@@ -1,6 +1,18 @@
 [
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\1e4e64243b7ae331d3158082eb51320e1b954e3e\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\color\\grey_to_red_selector.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\color\\grey_to_red_selector.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\color\\grey_to_red_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\color\\grey_to_red_selector.xml"
     }
 ]

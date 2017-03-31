@@ -1,5 +1,13 @@
 [
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_big_app.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable-xhdpi\\ic_big_app.png"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\text_tab_bg_selected.9.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable-xhdpi\\text_tab_bg_selected.9.png"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_btn_normal.png",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable-xhdpi\\back_btn_normal.png"
     },
@@ -12,11 +20,23 @@
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_btn_normal.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable-xhdpi\\back_btn_normal.png"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_more.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable-xhdpi\\ic_more.png"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_more.png",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable-xhdpi\\ic_more.png"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\text_tab_bg_selected.9.png",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\drawable-xhdpi\\text_tab_bg_selected.9.png"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\drawable-xhdpi\\ic_launcher.png"
     }
 ]

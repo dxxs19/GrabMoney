@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\WEI\Netearned\GrabMoney-V1.0.18(Android 6.x)\GrabMoney\build-types\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\WEI\AndroidStudioProject\GrabMoney\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\WEI\AndroidStudioProject\GrabMoney\build-types\debug\shaders"/></dataSet></merger>

@@ -4,8 +4,32 @@
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\layout\\activity_splash.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_be_care.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_be_care.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reward.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_reward.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\title_bar.xml"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_setting.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_instructions.xml",
@@ -24,11 +48,19 @@
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\layout\\title_bar.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_about.xml"
+    },
+    {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_be_care.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\layout\\activity_be_care.xml"
     },
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\layout\\activity_instructions.xml",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\layout\\activity_instructions.xml"
     }
 ]

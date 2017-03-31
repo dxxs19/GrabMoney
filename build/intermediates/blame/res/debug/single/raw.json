@@ -2,5 +2,9 @@
     {
         "merged": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\raw\\hongbao_arrived.wav",
         "source": "D:\\WEI\\Netearned\\GrabMoney-V1.0.18(Android 6.x)\\GrabMoney\\res\\raw\\hongbao_arrived.wav"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\build\\intermediates\\res\\merged\\debug\\raw\\hongbao_arrived.wav",
+        "source": "D:\\WEI\\AndroidStudioProject\\GrabMoney\\res\\raw\\hongbao_arrived.wav"
     }
 ]
