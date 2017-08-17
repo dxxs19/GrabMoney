@@ -37,25 +37,22 @@ import java.util.List;
 public class GrabMoneyService extends AccessibilityService
 {
     private static final String TAG = "GrabMoneyService";
-    private static final String WX_PKG = "com.tencent.mm";
-    private static final String QQ_PKG = "com.tencent.mobileqq";
+    private final String WX_PKG = "com.tencent.mm";
+    private final String QQ_PKG = "com.tencent.mobileqq";
     private static final String WX_ID_PREFIX = WX_PKG + ":id/";
 
     /**
      * "开"按钮的id
      */
-    private static final String OPENBTN_ID = WX_ID_PREFIX + "bjj"; //"com.tencent.mm:id/bi3"; //"com.tencent.mm:id/be_"; //"com.tencent.mm:id/bdh"; //"com.tencent.mm:id/bg7";
-    //"com.tencent.mm:id/bfi"; //"com.tencent.mm:id/bdg"; //"com.tencent.mm:id/bag";
+    private static final String OPENBTN_ID = WX_ID_PREFIX + "bjj"; 
     /**
      * 打开红包界面的关闭界面按钮ID
      */
-    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "bh8"; //"com.tencent.mm:id/bfu"; //"com.tencent.mm:id/bed";  //"com.tencent.mm:id/bdl"; //"com.tencent.mm:id/bga";
-    //"com.tencent.mm:id/bfm"; //"com.tencent.mm:id/bdk"; //"com.tencent.mm:id/bak";
+    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "bh8"; 
     /**
      * 红包详情界面的关闭界面按钮ID
      */
-    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "gv"; //"com.tencent.mm:id/gv"; //"com.tencent.mm:id/gr"; //"com.tencent.mm:id/gp"; //"com.tencent.mm:id/gd";
-    // "com.tencent.mm:id/gc";  //"com.tencent.mm:id/fs"; //"com.tencent.mm:id/fa";
+    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "gv"; 
 
     private static final int PERIOD_TIME = 3000;
     private static final String WEIXIN_CLASSNAME = "com.tencent.mm.ui.LauncherUI";
