@@ -176,7 +176,7 @@
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical"
-                    android:text="极速抢(提速2秒以上,微信6.5.7)"
+                    android:text="极速抢(提速2秒以上,微信6.5.10)"
                     android:textColor="@color/wine_red"
                     android:textSize="18sp"/>
             </RelativeLayout>

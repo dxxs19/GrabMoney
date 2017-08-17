@@ -237,7 +237,7 @@ public class BaseActivity extends Activity implements UpdatePointsListener
     @Override
     protected void onResume() {
         super.onResume();
-        AppConnect.getInstance(this).getPoints(this);
+//        AppConnect.getInstance(this).getPoints(this);
     }
 
     @Override

@@ -37,22 +37,22 @@ import java.util.List;
 public class GrabMoneyService extends AccessibilityService
 {
     private static final String TAG = "GrabMoneyService";
-    private final String WX_PKG = "com.tencent.mm";
+    private static final String WX_PKG = "com.tencent.mm";
     private final String QQ_PKG = "com.tencent.mobileqq";
     private static final String WX_ID_PREFIX = WX_PKG + ":id/";
 
     /**
      * "开"按钮的id
      */
-    private static final String OPENBTN_ID = WX_ID_PREFIX + "bjj"; 
+    private static final String OPENBTN_ID = WX_ID_PREFIX + "bnr";
     /**
      * 打开红包界面的关闭界面按钮ID
      */
-    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "bh8"; 
+    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "blh";
     /**
      * 红包详情界面的关闭界面按钮ID
      */
-    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "gv"; 
+    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "h6";
 
     private static final int PERIOD_TIME = 3000;
     private static final String WEIXIN_CLASSNAME = "com.tencent.mm.ui.LauncherUI";
