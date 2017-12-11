@@ -44,15 +44,15 @@ public class GrabMoneyService extends AccessibilityService
     /**
      * "开"按钮的id
      */
-    private static final String OPENBTN_ID = WX_ID_PREFIX + "bp6";
+    private static final String OPENBTN_ID = WX_ID_PREFIX + "bx4";
     /**
      * 打开红包界面的关闭界面按钮ID
      */
-    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "bmu";
+    private static final String RECEIVEUI_CLOSEBTN_ID = WX_ID_PREFIX + "bus";
     /**
      * 红包详情界面的关闭界面按钮ID
      */
-    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "hc";
+    private static final String DETAILUI_CLOSEBTN_ID = WX_ID_PREFIX + "hi";
 
     private static final int PERIOD_TIME = 3000;
     private static final String WEIXIN_CLASSNAME = "com.tencent.mm.ui.LauncherUI";
