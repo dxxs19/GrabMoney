@@ -6,7 +6,7 @@ package com.wei.grabmoney.utils;
 public class Log
 {
     // 需要打印信息则将此变量设为true;
-    private final static boolean IS_DEBUG = false;
+    private final static boolean IS_DEBUG = true;
 
     public static void e(String tag, String msg)
     {

@@ -34,8 +34,7 @@ import java.util.List;
 /**
  * @author x-wei
  */
-public class GrabMoneyService extends AccessibilityService
-{
+public class GrabMoneyService extends AccessibilityService {
     private static final String TAG = "GrabMoneyService";
     private static final String WX_PKG = "com.tencent.mm";
     private final String QQ_PKG = "com.tencent.mobileqq";
@@ -56,6 +55,7 @@ public class GrabMoneyService extends AccessibilityService
 
     private static final int PERIOD_TIME = 3000;
     private static final String WEIXIN_CLASSNAME = "com.tencent.mm.ui.LauncherUI";
+    // "com.tencent.mm.plugin.luckymoney.ui.En_fba4b94f";
     private static final String WEIXIN_LUCKYMONEYRECEIVEUI = "com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI";
     private static final String WEIXIN_MONEY_TEXT = "[微信红包]";
     // 红包详情界面(已领该红包)
@@ -86,10 +86,9 @@ public class GrabMoneyService extends AccessibilityService
     private SharedPreUtils mSharedPreUtils;
 
     @Override
-    public void onAccessibilityEvent(AccessibilityEvent event)
-    {
+    public void onAccessibilityEvent(AccessibilityEvent event) {
         int eventType = event.getEventType();
-		Log.e(TAG, "eventType = " + eventType);
+        Log.e(TAG, "eventType = " + eventType);
         openOrClose();
 //        Log.e(TAG, "eventType begin");
         switch (eventType) {
@@ -111,7 +110,7 @@ public class GrabMoneyService extends AccessibilityService
                 break;
 
             case AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED:
-				Log.e("className", className + ", hasOpenBtn : " + hasOpenBtn);
+                Log.e("className", className + ", hasOpenBtn : " + hasOpenBtn);
                 // 以下是抢微信红包
                 if (className.equals(WEIXIN_CLASSNAME)) {
                     // 如果是聊天界面，则搜索有没有红包，有则点击红包
@@ -121,33 +120,24 @@ public class GrabMoneyService extends AccessibilityService
                     // 如果是领取红包界面，则打开红包
                     Log.e(TAG, "--- 准备开红包 ---");
                     openMoney();
-                }
-                else if (className.equals(WEIXIN_LUCKYMONEYDETAILUI))
-                {
-                    if (hasOpenBtn)
-                    { // 自动点开的，要自动关掉
+                } else if (className.equals(WEIXIN_LUCKYMONEYDETAILUI)) {
+                    if (hasOpenBtn) { // 自动点开的，要自动关掉
                         Log.e(TAG, "--- 准备关闭详情界面 ---");
                         closeUI(DETAILUI_CLOSEBTN_ID);
                         hasOpenBtn = false;
-                        if (isFromHome)
-                        {
+                        if (isFromHome) {
                             isFromHome = false;
                             performGlobalAction(GLOBAL_ACTION_HOME);
                         }
-                    }
-                    else
-                    {
+                    } else {
                         return;
                     }
                 }
                 // 以下是抢QQ红包
-                else if (className.equals(QQ_CHAT))
-                {
+                else if (className.equals(QQ_CHAT)) {
                     isAllClosed = false;
                     getQQMoney();
-                }
-                else if (className.equals(QQ_WALLET))
-                {
+                } else if (className.equals(QQ_WALLET)) {
                     if (isAllClosed)
                         return;
                     try {
@@ -160,16 +150,15 @@ public class GrabMoneyService extends AccessibilityService
                     }
                 }
                 break;
+
+            default:
         }
     }
 
-    private void openOrClose()
-    {
+    private void openOrClose() {
         AccessibilityNodeInfo openButtons = getOpenButtons();
-        if (null != openButtons)
-        {
-            if (!isFastDoubleClick(3))
-            {
+        if (null != openButtons) {
+            if (!isFastDoubleClick(3)) {
                 float delayTime = mSharedPreUtils.getFloat(MainActivity.DELAY_TIME, 0);
                 try {
                     Thread.sleep((long) delayTime);
@@ -180,19 +169,14 @@ public class GrabMoneyService extends AccessibilityService
                     e.printStackTrace();
                 }
             }
-        }
-        else
-        {
+        } else {
             AccessibilityNodeInfo root = getRootInActiveWindow();
-            if (null != root)
-            {
+            if (null != root) {
                 List<AccessibilityNodeInfo> failtInfos = getFailtInfos(root);
 
-                if (null != failtInfos && failtInfos.size() > 0)
-                {
+                if (null != failtInfos && failtInfos.size() > 0) {
                     List<AccessibilityNodeInfo> closeInfos = root.findAccessibilityNodeInfosByViewId(RECEIVEUI_CLOSEBTN_ID);
-                    if (null != closeInfos && closeInfos.size() > 0)
-                    {
+                    if (null != closeInfos && closeInfos.size() > 0) {
                         try {
                             Thread.sleep(1000);
                             Log.e(TAG, "关闭开红包界面");
@@ -206,29 +190,27 @@ public class GrabMoneyService extends AccessibilityService
         }
     }
 
-    private List<AccessibilityNodeInfo> getFailtInfos(AccessibilityNodeInfo root)
-    {
+    private List<AccessibilityNodeInfo> getFailtInfos(AccessibilityNodeInfo root) {
         // 手慢了
         List<AccessibilityNodeInfo> slowInfos = root.findAccessibilityNodeInfosByText(FAILT_TEXT);
         // 已超时
         List<AccessibilityNodeInfo> timeOutInfos = root.findAccessibilityNodeInfosByText(TIMEOUT_TEXT);
-        return ( null != slowInfos && slowInfos.size() > 0 ) ? slowInfos : timeOutInfos;
+        return (null != slowInfos && slowInfos.size() > 0) ? slowInfos : timeOutInfos;
     }
 
     /**
      * 处理通知栏信息
+     *
      * @param event
      */
-    private void dealNotificationEven(AccessibilityEvent event)
-    {
+    private void dealNotificationEven(AccessibilityEvent event) {
         List<CharSequence> texts = event.getText();
 //                LogUtils.e(texts.toString());
         if (!texts.isEmpty()) {
             for (CharSequence text : texts) {
                 String content = text.toString();
 //                        LogUtils.e("content : " + content);
-                if (content.contains(WEIXIN_MONEY_TEXT) || content.contains(QQ_MONEY_TEXT))
-                {
+                if (content.contains(WEIXIN_MONEY_TEXT) || content.contains(QQ_MONEY_TEXT)) {
                     // 判断屏幕是否处于锁屏状态
                     if (keyguardManager.inKeyguardRestrictedInputMode()) {
                         Log.e(TAG, "屏幕处于锁屏状态！");
@@ -240,13 +222,10 @@ public class GrabMoneyService extends AccessibilityService
                         Notification notification = (Notification) event.getParcelableData();
                         PendingIntent pendingIntent = notification.contentIntent;
                         try {
-                            if (keyguardManager.inKeyguardRestrictedInputMode())
-                            {
+                            if (keyguardManager.inKeyguardRestrictedInputMode()) {
                                 pendingIntent.send();
                                 pendingIntent.send();
-                            }
-                            else
-                            {
+                            } else {
                                 pendingIntent.send();
                             }
                             luckMoneyInfo.cleanInfos();
@@ -262,10 +241,10 @@ public class GrabMoneyService extends AccessibilityService
 
     /**
      * 关闭UI
+     *
      * @param id
      */
-    private void closeUI(String id)
-    {
+    private void closeUI(String id) {
         hasOpenBtn = false;
         // 如果是红包详情界面，则关闭
         AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
@@ -277,34 +256,27 @@ public class GrabMoneyService extends AccessibilityService
                     info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
                 }
             }
-        }
-        else
-        {
+        } else {
             performGlobalAction(GLOBAL_ACTION_BACK);
         }
     }
 
     /**
      * 获取“开”按钮，
+     *
      * @return
      */
-    private AccessibilityNodeInfo getOpenButtons()
-    {
+    private AccessibilityNodeInfo getOpenButtons() {
         boolean isFastestChecked = SharedPreUtils.getInstance(this).getBoolean(MainActivity.FASTEST_CHECKED, false);
         AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
 
-        if (null != nodeInfo)
-        {
-            if (isFastestChecked)
-            { // 极速抢(针对特定版本，速度更快)
+        if (null != nodeInfo) {
+            if (isFastestChecked) { // 极速抢(针对特定版本，速度更快)
                 List<AccessibilityNodeInfo> nodes = nodeInfo.findAccessibilityNodeInfosByViewId(OPENBTN_ID);
-                if (nodes.size() > 0)
-                {
+                if (nodes.size() > 0) {
                     return nodes.get(0);
                 }
-            }
-            else if (className.equals(WEIXIN_LUCKYMONEYRECEIVEUI))
-            { // 普通抢(与微信版本无关)
+            } else if (className.equals(WEIXIN_LUCKYMONEYRECEIVEUI)) { // 普通抢(与微信版本无关)
                 int childCount = nodeInfo.getChildCount();
                 for (int i = 0; i < childCount; i++) {
                     AccessibilityNodeInfo node = nodeInfo.getChild(i);
@@ -322,23 +294,18 @@ public class GrabMoneyService extends AccessibilityService
     /**
      * 找到可领取的红包并模拟点击
      */
-    private void getMoney()
-    {
+    private void getMoney() {
         AccessibilityNodeInfo rootInActiveWindow = getRootInActiveWindow();
-        if (null != rootInActiveWindow)
-        {
+        if (null != rootInActiveWindow) {
             // 获取最新的那个红包进行点击
             AccessibilityNodeInfo targetNode = getTheLastNode(GETMONEY_TEXT, CHECKMONEY_TEXT);
 
-            if (null != targetNode)
-            {
+            if (null != targetNode) {
                 SharedPreferences sharedPreferences = getSharedPreferences("mark", MODE_PRIVATE);
-                String mark = (sharedPreferences == null) ? "":sharedPreferences.getString("mark_work", "");
-                if (luckMoneyInfo.isNodeCanOpen(targetNode, mark))
-                {
+                String mark = (sharedPreferences == null) ? "" : sharedPreferences.getString("mark_work", "");
+                if (luckMoneyInfo.isNodeCanOpen(targetNode, mark)) {
                     Log.e(TAG, "luckMoneyInfo.isNodeCanOpen");
-                    if (!isFastDoubleClick(1))
-                    {
+                    if (!isFastDoubleClick(1)) {
                         clickWallet(targetNode);
                         hasOpenBtn = true;
                     }
@@ -350,19 +317,14 @@ public class GrabMoneyService extends AccessibilityService
     /**
      * 找到可领取的QQ红包并模拟点击
      */
-    private void getQQMoney()
-    {
+    private void getQQMoney() {
         AccessibilityNodeInfo rootInActiveWindow = getRootInActiveWindow();
-        if (null != rootInActiveWindow)
-        {
+        if (null != rootInActiveWindow) {
             // 普通红包
             List<AccessibilityNodeInfo> targetNodes = rootInActiveWindow.findAccessibilityNodeInfosByText(QQ_TIPS);
-            if (null != targetNodes && targetNodes.size() > 0)
-            {
-                for (AccessibilityNodeInfo node:targetNodes)
-                {
-                    if (isCanGet(node))
-                    {
+            if (null != targetNodes && targetNodes.size() > 0) {
+                for (AccessibilityNodeInfo node : targetNodes) {
+                    if (isCanGet(node)) {
                         float delayTime = mSharedPreUtils.getFloat(MainActivity.DELAY_TIME, 0);
                         try {
                             Thread.sleep((long) delayTime);
@@ -376,28 +338,22 @@ public class GrabMoneyService extends AccessibilityService
 
             // 口令红包
             List<AccessibilityNodeInfo> cmdNodes = rootInActiveWindow.findAccessibilityNodeInfosByText(QQ_COMMAND);
-            if (null != cmdNodes && cmdNodes.size() > 0)
-            {
+            if (null != cmdNodes && cmdNodes.size() > 0) {
                 List<AccessibilityNodeInfo> sendBtns = rootInActiveWindow.findAccessibilityNodeInfosByViewId("com.tencent.mobileqq:id/fun_btn");
                 AccessibilityNodeInfo sendBtn = (sendBtns == null ? null : sendBtns.get(0));
 
-                for (AccessibilityNodeInfo cmdNode:cmdNodes)
-                {
+                for (AccessibilityNodeInfo cmdNode : cmdNodes) {
                     String cmdText = cmdNode.getText().toString();
-                    if (cmdText.equals(QQ_COMMAND))
-                    {
+                    if (cmdText.equals(QQ_COMMAND)) {
                         clickWallet(cmdNode);
                     }
                 }
 
                 List<AccessibilityNodeInfo> clickCmdNodes = rootInActiveWindow.findAccessibilityNodeInfosByText(QQ_CLICK_COMMAND);
-                if (null != clickCmdNodes && clickCmdNodes.size() > 0)
-                {
-                    for (AccessibilityNodeInfo clickCmdNode : clickCmdNodes)
-                    {
+                if (null != clickCmdNodes && clickCmdNodes.size() > 0) {
+                    for (AccessibilityNodeInfo clickCmdNode : clickCmdNodes) {
                         clickWallet(clickCmdNode);
-                        if (sendBtn != null && sendBtn.isEnabled())
-                        {
+                        if (sendBtn != null && sendBtn.isEnabled()) {
                             float delayTime = mSharedPreUtils.getFloat(MainActivity.DELAY_TIME, 0);
                             try {
                                 Thread.sleep((long) delayTime);
@@ -412,13 +368,10 @@ public class GrabMoneyService extends AccessibilityService
         }
     }
 
-    private void clickWallet(AccessibilityNodeInfo node)
-    {
+    private void clickWallet(AccessibilityNodeInfo node) {
         AccessibilityNodeInfo parent = node.getParent();
-        while (null != parent)
-        {
-            if (parent.isClickable())
-            {
+        while (null != parent) {
+            if (parent.isClickable()) {
                 Log.e(TAG, "--- clickWallet ---");
                 parent.performAction(AccessibilityNodeInfo.ACTION_CLICK);
                 return;
@@ -427,25 +380,19 @@ public class GrabMoneyService extends AccessibilityService
         }
     }
 
-    private boolean isCanGet(AccessibilityNodeInfo node)
-    {
+    private boolean isCanGet(AccessibilityNodeInfo node) {
         boolean isCan = true;
         SharedPreferences sharedPreferences = getSharedPreferences("mark", MODE_PRIVATE);
-        String mark = (sharedPreferences == null) ? "":sharedPreferences.getString("mark_work", "");
-        if ("".equals(mark))
-        {
+        String mark = (sharedPreferences == null) ? "" : sharedPreferences.getString("mark_work", "");
+        if ("".equals(mark)) {
             isCan = true;
-        }
-        else
-        {
+        } else {
             AccessibilityNodeInfo parent = node.getParent();
             String content = parent.getChild(0).getText().toString();
 //            Log.e(TAG, "content = " + content);
             String[] works = mark.split("，");
-            for (String work:works)
-            {
-                if (content.contains(work))
-                {
+            for (String work : works) {
+                if (content.contains(work)) {
                     isCan = false;
                     break;
                 }
@@ -460,24 +407,19 @@ public class GrabMoneyService extends AccessibilityService
      * @param texts
      * @return
      */
-    private AccessibilityNodeInfo getTheLastNode(String... texts)
-    {
+    private AccessibilityNodeInfo getTheLastNode(String... texts) {
         int bottom = 0;
         AccessibilityNodeInfo lastNode = null;
         AccessibilityNodeInfo rootNodeInfo = getRootInActiveWindow();
 
-        for (String text : texts)
-        {
+        for (String text : texts) {
             if (text == null || rootNodeInfo == null)
                 continue;
 
             List<AccessibilityNodeInfo> nodes = rootNodeInfo.findAccessibilityNodeInfosByText(text);
-            if (null == nodes)
-            {
+            if (null == nodes) {
                 lastNode = null;
-            }
-            else
-            {
+            } else {
                 if (!nodes.isEmpty()) {
                     AccessibilityNodeInfo node = nodes.get(nodes.size() - 1);
                     Rect bounds = new Rect();
@@ -500,16 +442,13 @@ public class GrabMoneyService extends AccessibilityService
     /**
      * 打开红包
      */
-    private void openMoney()
-    {
+    private void openMoney() {
         Log.e(TAG, "--- openMoney ---");
         // 点击繁体的“开”。现在新版本微信红包是点“开”来领取
         AccessibilityNodeInfo info = getOpenButtons();
-        if (null == info)
-        {
+        if (null == info) {
             // 如果没有“开”可点，则直接关闭当前窗口，回到微信聊天界面
-            if (!className.equals(WEIXIN_CLASSNAME) && !className.equals(WEIXIN_LUCKYMONEYDETAILUI))
-            {
+            if (!className.equals(WEIXIN_CLASSNAME) && !className.equals(WEIXIN_LUCKYMONEYDETAILUI)) {
                 try {
                     Thread.sleep(1000);
                     Log.e(TAG, "没有'开'按钮");
@@ -518,11 +457,8 @@ public class GrabMoneyService extends AccessibilityService
                     e.printStackTrace();
                 }
             }
-        }
-        else
-        {
-            if (!isFastDoubleClick(2))
-            {
+        } else {
+            if (!isFastDoubleClick(2)) {
                 float delayTime = mSharedPreUtils.getFloat(MainActivity.DELAY_TIME, 0);
                 try {
                     Thread.sleep((long) delayTime);
@@ -558,6 +494,7 @@ public class GrabMoneyService extends AccessibilityService
 
     private SoundPool mSoundPool;
     private HashMap<Integer, Integer> soundMap = new HashMap<>();
+
     private void initSoundPool() {
         mSoundPool = new SoundPool(1, AudioManager.STREAM_SYSTEM, 5);
         soundMap.put(1, mSoundPool.load(this, R.raw.hongbao_arrived, 1));
@@ -566,10 +503,8 @@ public class GrabMoneyService extends AccessibilityService
     /**
      * 解锁并震动3s
      */
-    private void unlockAndVib(boolean b)
-    {
-        if (b)
-        {
+    private void unlockAndVib(boolean b) {
+        if (b) {
             String value = mSharedPreUtils.getString("alarm", "");
             if (value.equals(MainActivity.NOTHING))
                 return;
@@ -583,17 +518,12 @@ public class GrabMoneyService extends AccessibilityService
                 Log.e(TAG, "亮屏");
             }
 
-            if (value.equals(MainActivity.VOICE_VIBRATE))
-            {
+            if (value.equals(MainActivity.VOICE_VIBRATE)) {
                 mSoundPool.play(soundMap.get(1), 1, 1, 0, 0, 1);
                 vibrator.vibrate(PERIOD_TIME * 2);
-            }
-            else if (value.equals(MainActivity.VOICE))
-            {
+            } else if (value.equals(MainActivity.VOICE)) {
                 mSoundPool.play(soundMap.get(1), 1, 1, 0, 0, 1);
-            }
-            else if (value.equals(MainActivity.VIBRATE))
-            {
+            } else if (value.equals(MainActivity.VIBRATE)) {
                 vibrator.vibrate(PERIOD_TIME * 2);
             }
 //            // 播放系统自带声音
@@ -615,17 +545,17 @@ public class GrabMoneyService extends AccessibilityService
     }
 
     protected long lastClickTime, lastClickTime2, lastClickTime3;
+
     /**
      * 判断控件在短时间内是否被连续点击了两次
+     *
      * @return
      */
-    public boolean isFastDoubleClick(int flag)
-    {
+    public boolean isFastDoubleClick(int flag) {
         long timeD = 0l;
         long time = System.currentTimeMillis();
 
-        switch (flag)
-        {
+        switch (flag) {
             case 1:
                 timeD = time - lastClickTime;
                 lastClickTime = time;
@@ -649,8 +579,7 @@ public class GrabMoneyService extends AccessibilityService
     }
 
     //
-    private void setServiceToForeground()
-    {
+    private void setServiceToForeground() {
         Intent mAccessibleIntent = new Intent(this, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, mAccessibleIntent, 0);
         Notification.Builder builder = new Notification.Builder(this)

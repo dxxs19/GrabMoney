@@ -243,7 +243,7 @@ public class BaseActivity extends Activity implements UpdatePointsListener
     @Override
     protected void onDestroy() {
         // 释放资源，原finalize()方法名修改为close()
-        AppConnect.getInstance(this).close();
+//        AppConnect.getInstance(this).close();
         super.onDestroy();
     }
 }
