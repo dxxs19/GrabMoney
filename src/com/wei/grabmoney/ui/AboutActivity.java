@@ -25,6 +25,12 @@ public class AboutActivity extends BaseActivity
         initAdvs();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        finish();
+    }
+
     private void initAdvs() {
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()

@@ -1,10 +1,13 @@
 package com.wei.grabmoney.service;
 
 import android.accessibilityservice.AccessibilityService;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.KeyguardManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Rect;
@@ -13,15 +16,21 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.media.SoundPool;
 import android.net.Uri;
+import android.os.Handler;
 import android.os.PowerManager;
 import android.os.Vibrator;
 import android.provider.Settings;
+import android.view.Display;
+import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wei.grabmoney.R;
 import com.wei.grabmoney.bean.LuckMoneyInfo;
+import com.wei.grabmoney.ui.AboutActivity;
+import com.wei.grabmoney.ui.EmptyActivity;
 import com.wei.grabmoney.utils.Log;
 import com.wei.grabmoney.ui.MainActivity;
 import com.wei.grabmoney.utils.SharedPreUtils;
@@ -55,8 +64,7 @@ public class GrabMoneyService extends AccessibilityService {
 
     private static final int PERIOD_TIME = 3000;
     private static final String WEIXIN_CLASSNAME = "com.tencent.mm.ui.LauncherUI";
-    // "com.tencent.mm.plugin.luckymoney.ui.En_fba4b94f";
-    private static final String WEIXIN_LUCKYMONEYRECEIVEUI = "com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI";
+    private static final String WEIXIN_LUCKYMONEYRECEIVEUI = "com.tencent.mm.plugin.luckymoney.ui.En_fba4b94f"; //"com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI";
     private static final String WEIXIN_MONEY_TEXT = "[微信红包]";
     // 红包详情界面(已领该红包)
     private static final String WEIXIN_LUCKYMONEYDETAILUI = "com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyDetailUI";
@@ -107,7 +115,7 @@ public class GrabMoneyService extends AccessibilityService {
             // 如果当前界面是微信聊天界面，则进行以下操作
             case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
                 className = event.getClassName().toString();
-                break;
+//                break;
 
             case AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED:
                 Log.e("className", className + ", hasOpenBtn : " + hasOpenBtn);
@@ -119,7 +127,20 @@ public class GrabMoneyService extends AccessibilityService {
                 } else if (className.equals(WEIXIN_LUCKYMONEYRECEIVEUI)) {
                     // 如果是领取红包界面，则打开红包
                     Log.e(TAG, "--- 准备开红包 ---");
-                    openMoney();
+                    AccessibilityNodeInfo info = getOpenButtons();
+                    if (info == null)
+                    {
+//                        showDialog();
+                        Intent intent = new Intent(this, EmptyActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+
+                    }
+                    else
+                    {
+//                        openMoney(info);
+                        info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    }
                 } else if (className.equals(WEIXIN_LUCKYMONEYDETAILUI)) {
                     if (hasOpenBtn) { // 自动点开的，要自动关掉
                         Log.e(TAG, "--- 准备关闭详情界面 ---");
@@ -153,6 +174,37 @@ public class GrabMoneyService extends AccessibilityService {
 
             default:
         }
+    }
+
+    private final Handler mHandler = new Handler();
+    private Dialog mDialog;
+    private void showDialog()
+    {
+        if (mDialog != null)
+        {
+            if (mDialog.isShowing())
+            {
+                mDialog.dismiss();
+            }
+            mDialog = null;
+        }
+        mDialog = new ProgressDialog(this);
+        mDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+        mDialog.show();
+
+        WindowManager windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        Display display = windowManager.getDefaultDisplay();
+        WindowManager.LayoutParams layoutParams = mDialog.getWindow().getAttributes();
+        layoutParams.height = display.getHeight();
+        layoutParams.width = display.getWidth();
+        mDialog.getWindow().setAttributes(layoutParams);
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mDialog.dismiss();
+                mDialog = null;
+            }
+        }, 2000);
     }
 
     private void openOrClose() {
@@ -269,25 +321,32 @@ public class GrabMoneyService extends AccessibilityService {
     private AccessibilityNodeInfo getOpenButtons() {
         boolean isFastestChecked = SharedPreUtils.getInstance(this).getBoolean(MainActivity.FASTEST_CHECKED, false);
         AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
-
-        if (null != nodeInfo) {
-            if (isFastestChecked) { // 极速抢(针对特定版本，速度更快)
-                List<AccessibilityNodeInfo> nodes = nodeInfo.findAccessibilityNodeInfosByViewId(OPENBTN_ID);
-                if (nodes.size() > 0) {
-                    return nodes.get(0);
-                }
-            } else if (className.equals(WEIXIN_LUCKYMONEYRECEIVEUI)) { // 普通抢(与微信版本无关)
-                int childCount = nodeInfo.getChildCount();
-                for (int i = 0; i < childCount; i++) {
-                    AccessibilityNodeInfo node = nodeInfo.getChild(i);
-                    if (node != null && node.getClassName() != null) {
-                        if (node.getClassName().equals("android.widget.Button")) {
-                            return node;
-                        }
-                    }
-                }
-            }
+        if (nodeInfo == null)
+        {
+            return null;
         }
+        List<AccessibilityNodeInfo> nodes = nodeInfo.findAccessibilityNodeInfosByViewId(OPENBTN_ID);
+        if (nodes.size() > 0) {
+            return nodes.get(0);
+        }
+//        if (null != nodeInfo) {
+//            if (isFastestChecked) { // 极速抢(针对特定版本，速度更快)
+//                List<AccessibilityNodeInfo> nodes = nodeInfo.findAccessibilityNodeInfosByViewId(OPENBTN_ID);
+//                if (nodes.size() > 0) {
+//                    return nodes.get(0);
+//                }
+//            } else if (className.equals(WEIXIN_LUCKYMONEYRECEIVEUI)) { // 普通抢(与微信版本无关)
+//                int childCount = nodeInfo.getChildCount();
+//                for (int i = 0; i < childCount; i++) {
+//                    AccessibilityNodeInfo node = nodeInfo.getChild(i);
+//                    if (node != null && node.getClassName() != null) {
+//                        if (node.getClassName().equals("android.widget.Button")) {
+//                            return node;
+//                        }
+//                    }
+//                }
+//            }
+//        }
         return null;
     }
 

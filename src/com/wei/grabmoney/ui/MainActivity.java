@@ -78,6 +78,7 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
         setData();
         // 初始化广告
         initAdvs();
+        Log.e(TAG, "--- onCreate ---");
     }
 
     private void initView()
@@ -417,4 +418,5 @@ public class MainActivity extends BaseActivity implements TextWatcher, SeekBar.O
 //        // 回收积分广告占用的资源
 //        OffersManager.getInstance(this).onAppExit();
     }
+
 }

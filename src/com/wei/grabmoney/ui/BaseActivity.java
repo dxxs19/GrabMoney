@@ -30,7 +30,7 @@ import cn.waps.UpdatePointsListener;
  */
 public class BaseActivity extends Activity implements UpdatePointsListener
 {
-    private String TAG = "";
+    protected String TAG = getClass().getSimpleName();
 //    protected final String SHARE_URL = "http://xwei.apps.cn";
     protected final String SHARE_URL = "http://xwei.apps.cn/details?app=f67090b3d70a79a470d85fada8936b33";
     protected Context mContext;
@@ -53,7 +53,7 @@ public class BaseActivity extends Activity implements UpdatePointsListener
     {
         super.onCreate(savedInstanceState);
         mContext = this;
-        TAG = getClass().getSimpleName();
+//        TAG = getClass().getSimpleName();
         initBaseView();
     }
 
